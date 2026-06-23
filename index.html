@@ -291,16 +291,18 @@
     }
     .vol-thumb {
       position: absolute;
-      right: -6px; top: 50%;
+      right: -10px; top: 50%;
       transform: translateY(-50%);
-      width: 12px; height: 12px;
-      background: #c084fc;
+      width: 20px; height: 20px;
+      background: radial-gradient(circle at 35% 35%, #e0c8ff, #c084fc);
       border-radius: 50%;
-      box-shadow: 0 0 8px rgba(192,132,252,0.6);
+      box-shadow: 0 0 12px rgba(192,132,252,0.9), 0 0 24px rgba(192,132,252,0.4);
+      border: 2px solid rgba(255,255,255,0.25);
+      pointer-events: none;
     }
     input[type=range].vol-slider {
       position: absolute;
-      inset: -8px 0;
+      inset: -10px 0;
       width: 100%;
       opacity: 0;
       cursor: pointer;
