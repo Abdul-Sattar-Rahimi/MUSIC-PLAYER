@@ -289,17 +289,7 @@
       border-radius: 99px;
       position: relative;
     }
-    .vol-thumb {
-      position: absolute;
-      right: -10px; top: 50%;
-      transform: translateY(-50%);
-      width: 20px; height: 20px;
-      background: radial-gradient(circle at 35% 35%, #e0c8ff, #c084fc);
-      border-radius: 50%;
-      box-shadow: 0 0 12px rgba(192,132,252,0.9), 0 0 24px rgba(192,132,252,0.4);
-      border: 2px solid rgba(255,255,255,0.25);
-      pointer-events: none;
-    }
+    
     input[type=range].vol-slider {
       position: absolute;
       inset: -10px 0;
@@ -447,7 +437,6 @@
 
   <div class="vol-track" id="volTrack">
     <div class="vol-fill" id="volFill" style="width:70%"></div>
-    <div class="vol-thumb" id="volThumb" style="left:calc(70% - 10px)"></div>
     <input type="range" class="vol-slider" id="volSlider" min="0" max="100" value="70">
   </div>
 
